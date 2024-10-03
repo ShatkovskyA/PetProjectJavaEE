@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- XML ДЛЯ ОБРАЗЦА, в проекте не задействован -->
+
+<request>
+  <start-row>
+    <!-- добавляем метод -->
+    <metod>GET</metod>
+    <!-- добавляем урл -->
+    <url>www.google.com</url>
+    <!-- версия HTTP протокола -->
+    <version>1.1</version>
+  </start-row>
+  <headers>
+    <!-- тут всякие разные заголовки -->
+    <header>
+      <name>content-type</name>
+      <value>text/html</value>
+    </header>
+    <header>
+      <name>accept</name>
+      <value>application/json</value>
+    </header>
+    <header></header>
+  </headers>
+  <body/>
+</request>

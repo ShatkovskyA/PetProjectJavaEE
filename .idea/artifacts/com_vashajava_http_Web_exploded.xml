@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="com.vashajava.http:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/com_vashajava_http_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="com.vashajava.http/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="com.vashajava.http" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="postgresql-42.5.0" />
+          <element id="library" level="project" name="servlet-api" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
