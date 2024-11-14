@@ -1,5 +1,10 @@
 package com.vashajava.http.socket;
 
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+
 /**
  * Класс DatagramRunner - реализует взаимодействие по протоколу UDP
  * просто отправляет датаграм пакеты, а сервер принимает эти пакет
@@ -7,17 +12,6 @@ package com.vashajava.http.socket;
  * @author Anton Shatkovskiy created 19.02.2024 г.
  */
 
-import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetAddress;
-
-/**
- * DatagramRunner.
- *
- * @author Anton Shatkovskiy
- * @created 19.02.2024 г.
- */
 public class DatagramRunner {
 
   public static void main(String[] args) throws IOException {

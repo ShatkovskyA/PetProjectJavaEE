@@ -9,6 +9,10 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/resources" />
+          <root url="file://$MODULE_DIR$/src" />
+        </sourceRoots>
       </configuration>
     </facet>
   </component>
@@ -24,5 +28,6 @@
     <orderEntry type="library" name="servlet-api (2)" level="project" />
     <orderEntry type="library" name="postgresql-42.5.0" level="project" />
     <orderEntry type="library" name="postgresql-42.5.0 (2)" level="project" />
+    <orderEntry type="library" name="lombok-1.18.30" level="project" />
   </component>
 </module>

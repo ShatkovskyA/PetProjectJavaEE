@@ -10,6 +10,8 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="postgresql-42.5.0" />
           <element id="library" level="project" name="servlet-api" />
+          <element id="library" level="project" name="lombok-1.18.30" />
+          <element id="library" level="project" name="postgresql-42.5.0 (2)" />
         </element>
       </element>
     </root>

@@ -1,5 +1,10 @@
 package com.vashajava.http.util;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import lombok.SneakyThrows;
+import lombok.experimental.UtilityClass;
+
 /**
  * Класс ConnectionManager - утилитный класс, реализующий соединение
  * т. к. утилитный, то делаем класс final
@@ -8,18 +13,8 @@ package com.vashajava.http.util;
  * @author Anton Shatkovskiy created 29.02.2024 г.
  */
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
-//import src.ru.tern.http.util.PropertiesUtil;
-
-/**
- * ConnectionManager.
- *
- * @author Anton Shatkovskiy
- * @created 01.03.2024 г.
- */
+// после интеграции Lombok комментим геттеры, сеттеры, икуалс, хэшкод и т. п., ставим аннотации
+  @UtilityClass
 public final class ConnectionManager {
 
   // добавляем три проперти как в файле application.properties
@@ -42,23 +37,30 @@ public final class ConnectionManager {
     }
   }
 
+  // после интеграции Lombok асть кода скрываем - комментим
   // генерируем private конструктор
-  private ConnectionManager() {
-  }
+//  private ConnectionManager() {
+//  }
 
   // статический метод для возврата конекшена
+  // получаем настройки, это второй способ из файла + генерируем try-catch - после Lombok
+  @SneakyThrows
   public static Connection get() {
     // прописываем настройки, но можно это вынести и в проперти, это харкордные значения
     // return DriverManager.getConnection("url", "user", "password");
+    return DriverManager.getConnection(
+        PropertiesUtil.get(URL_KEY),
+        PropertiesUtil.get(USER_KEY),
+        PropertiesUtil.get(PASSWORD_KEY));
 
-    // получаем настройки, это второй способ из файла + генерируем try-catch
-    try {
-      return DriverManager.getConnection(
-          PropertiesUtil.get(URL_KEY),
-          PropertiesUtil.get(USER_KEY),
-          PropertiesUtil.get(PASSWORD_KEY));
-    } catch (SQLException throwables) {
-      throw new RuntimeException(throwables);
-    }
+    // получаем настройки, это второй способ из файла + генерируем try-catch - до Lombok
+//    try {
+//      return DriverManager.getConnection(
+//          PropertiesUtil.get(URL_KEY),
+//          PropertiesUtil.get(USER_KEY),
+//          PropertiesUtil.get(PASSWORD_KEY));
+//    } catch (SQLException throwables) {
+//      throw new RuntimeException(throwables);
+//    }
   }
 }

@@ -5,12 +5,7 @@ package com.vashajava.http.server;
  *
  * @author Anton Shatkovskiy created 21.02.2024 г.
  */
-/**
- * HttpServerRunner.
- *
- * @author Anton Shatkovskiy
- * @created 21.02.2024 г.
- */
+
 public class HttpServerRunner {
 
   public static void main(String[] args) {

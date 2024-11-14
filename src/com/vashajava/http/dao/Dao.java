@@ -1,14 +1,14 @@
 package com.vashajava.http.dao;
 
+import java.util.List;
+import java.util.Optional;
+
 /**
  * Класс Dao - общий интерфейс с методами для всех классов в слое DAO
  * с пераметрами айдишник + тип сущности
  *
  * @author Anton Shatkovskiy created 29.02.2024 г.
  */
-
-import java.util.List;
-import java.util.Optional;
 
 public interface Dao<K, T> {
 

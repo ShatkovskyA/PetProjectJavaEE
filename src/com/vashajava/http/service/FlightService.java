@@ -1,22 +1,14 @@
 package com.vashajava.http.service;
 
-/**
- * Класс FlightService -
- *
- * @author Anton Shatkovskiy created 05.03.2024 г.
- */
-
-
 import com.vashajava.http.dao.FlightDao;
 import com.vashajava.http.dto.FlightDto;
 import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * FlightService.
+ * Класс FlightService -
  *
- * @author Anton Shatkovskiy
- * @created 05.03.2024 г.
+ * @author Anton Shatkovskiy created 05.03.2024 г.
  */
 
 public class FlightService {
@@ -39,15 +31,18 @@ public class FlightService {
     // преобразовываем все сущности через стримы
     return flightDao.findAll().stream()
         // flight cущность преобразовываем в FlightDto
-        .map(flight -> new FlightDto(
-            flight.getId(),
+        // - до Lombok .map(flight -> new FlightDto(flight.getId() и т. д.
+        .map(flight -> FlightDto.builder()
+                .id(flight.getId())
+                .description(
             // откуда и куда летит + статус
             """
                 %s - %s - %s
                 """.formatted(flight.getDepartureAirportCode(),
                 flight.getArrivalAirportCode(),
-                flight.getStatus())
-        ))
+                flight.getStatus()))
+            .build()
+        )
         // коллектим все в список, преобразовываем в статический импорт
         .collect(Collectors.toList());
 

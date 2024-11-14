@@ -1,13 +1,5 @@
 package com.vashajava.http.server;
 
-
-/**
- * Класс HttpClientRunner - реализует HTTP отправку запроса на сервер,
- * т. е. это HTTP - клиент
- *
- * @author Anton Shatkovskiy created 21.02.2024 г.
- */
-
 import static java.net.http.HttpRequest.BodyPublishers.ofFile;
 
 import java.io.IOException;
@@ -20,11 +12,12 @@ import java.nio.file.Path;
 import java.util.concurrent.ExecutionException;
 
 /**
- * HttpClientRunner.
+ * Класс HttpClientRunner - реализует HTTP отправку запроса на сервер,
+ * т. е. это HTTP - клиент
  *
- * @author Anton Shatkovskiy
- * @created 21.02.2024 г.
+ * @author Anton Shatkovskiy created 21.02.2024 г.
  */
+
 public class HttpClientRunner {
 
   public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {

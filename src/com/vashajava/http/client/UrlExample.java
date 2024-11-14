@@ -1,13 +1,13 @@
 package com.vashajava.http.client;
+
+import java.io.IOException;
+import java.net.URL;
+
 /**
  * Класс UrlExample - реализует класс для реализации методов по протоколоу HTTP для обращения через URL
  *
  * @author Anton Shatkovskiy created 19.02.2024 г.
  */
-
-import java.io.IOException;
-import java.net.URL;
-
 
 public class UrlExample {
 

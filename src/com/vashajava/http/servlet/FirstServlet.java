@@ -1,11 +1,5 @@
 package com.vashajava.http.servlet;
 
-/**
- * Класс FirstServlet - реализует HTTPсервлет
- *
- * @author Anton Shatkovskiy created 27.02.2024 г.
- */
-
 import java.io.IOException;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -15,10 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * FirstServlet.
+ * Класс FirstServlet - реализует HTTPсервлет
  *
- * @author Anton Shatkovskiy
- * @created 27.02.2024 г.
+ * @author Anton Shatkovskiy created 27.02.2024 г.
  */
 
 @WebServlet("/first")

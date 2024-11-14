@@ -1,18 +1,18 @@
 package com.vashajava.http.client;
 
-/**
- * Класс HttpClientExample - реализует класс для реализации роли клиента к вэб-серверу
- * HttpClient - проедпочтительнее использовать после Java 11 нежели Url!
- *
- * @author Anton Shatkovskiy created 21.02.2024 г.
- */
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpClient.Version;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse.BodyHandlers;
+
+/**
+ * Класс HttpClientExample - реализует класс для реализации роли клиента к вэб-серверу
+ * HttpClient - проедпочтительнее использовать после Java 11 нежели Url!
+ *
+ * @author Anton Shatkovskiy created 21.02.2024 г.
+ */
 
 public class HttpClientExample {
 

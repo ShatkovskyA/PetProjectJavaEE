@@ -1,5 +1,8 @@
 package com.vashajava.http.entity;
 
+import java.time.LocalDateTime;
+import java.util.Objects;
+
 /**
  * Класс Flight - реализует сущность с полями из СУБД
  * уровень DAO
@@ -7,15 +10,6 @@ package com.vashajava.http.entity;
  * @author Anton Shatkovskiy created 29.02.2024 г.
  */
 
-import java.time.LocalDateTime;
-import java.util.Objects;
-
-/**
- * Flight.
- *
- * @author Anton Shatkovskiy
- * @created 29.02.2024 г.
- */
 public class Flight {
   // маппим таблицу в поля сущности
   private Long id;

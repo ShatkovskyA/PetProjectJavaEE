@@ -1,11 +1,5 @@
 package com.vashajava.http.dao;
 
-/**
- * Класс FlightDao - для работы с таблицей.
- *
- * @author Anton Shatkovskiy created 29.02.2024 г.
- */
-
 import com.vashajava.http.entity.Flight;
 import com.vashajava.http.entity.FlightStatus;
 import com.vashajava.http.util.ConnectionManager;
@@ -15,6 +9,12 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+/**
+ * Класс FlightDao - для работы с таблицей.
+ *
+ * @author Anton Shatkovskiy created 29.02.2024 г.
+ */
 
 public class FlightDao implements Dao<Long, Flight> {
 

@@ -14,12 +14,6 @@ import javax.servlet.http.HttpServletResponse;
  * @author Anton Shatkovskiy created 28.02.2024 г.
  */
 
-/**
- * DownloadServlet.
- *
- * @author Anton Shatkovskiy
- * @created 28.02.2024 г.
- */
 @WebServlet("/download")
 public class DownloadServlet extends HttpServlet {
 

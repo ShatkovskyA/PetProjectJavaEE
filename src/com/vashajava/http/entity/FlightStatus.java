@@ -6,12 +6,7 @@ package com.vashajava.http.entity;
  *
  * @author Anton Shatkovskiy created 29.02.2024 г.
  */
-/**
- * FlightStatus.
- *
- * @author Anton Shatkovskiy
- * @created 01.03.2024 г.
- */
+
 public enum FlightStatus {
   // также берутся из таблицы
   ARRIVED,

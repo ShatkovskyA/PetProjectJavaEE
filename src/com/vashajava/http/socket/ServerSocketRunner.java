@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 import java.util.Scanner;
 
 /**
- * Класс ServerSocketRunner - реализует сервер.
+ * Класс ServerSocketRunner - реализует и эмулирует сервер.
  *
  * @author Anton Shatkovskiy created 15.02.2024 г.
  */

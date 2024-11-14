@@ -16,12 +16,6 @@ import java.util.concurrent.Executors;
  * @author Anton Shatkovskiy created 21.02.2024 г.
  */
 
-/**
- * HttpServer.
- *
- * @author Anton Shatkovskiy
- * @created 21.02.2024 г.
- */
 public class HttpServer {
 
   // вводим переменную для создания пула соединений на сервере

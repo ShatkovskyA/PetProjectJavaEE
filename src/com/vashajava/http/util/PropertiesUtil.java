@@ -2,6 +2,7 @@ package com.vashajava.http.util;
 
 import java.io.IOException;
 import java.util.Properties;
+
 /**
  * Класс PropertiesUtil - утилитный класс
  * т. к. утилитный, то делаем класс final
@@ -10,12 +11,6 @@ import java.util.Properties;
  * @author Anton Shatkovskiy created 29.02.2024 г.
  */
 
-/**
- * PropertiesUtil.
- *
- * @author Anton Shatkovskiy
- * @created 01.03.2024 г.
- */
 public final class PropertiesUtil {
 
   // создаем объект класса Properties
