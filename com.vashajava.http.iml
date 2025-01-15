@@ -29,5 +29,9 @@
     <orderEntry type="library" name="postgresql-42.5.0" level="project" />
     <orderEntry type="library" name="postgresql-42.5.0 (2)" level="project" />
     <orderEntry type="library" name="lombok-1.18.30" level="project" />
+    <orderEntry type="library" name="jakarta.servlet.jsp.jstl-2.0.0" level="project" />
+    <orderEntry type="library" name="jakarta.servlet.jsp.jstl-api-3.0.0" level="project" />
+    <orderEntry type="library" name="jstl-1.2-sources" level="project" />
+    <orderEntry type="library" name="servlet-api (3)" level="project" />
   </component>
 </module>

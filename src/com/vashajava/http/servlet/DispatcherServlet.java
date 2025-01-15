@@ -1,11 +1,11 @@
 package com.vashajava.http.servlet;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * Класс DispatcherServlet - реализует логику сервлета перенаправления разл. страниц на другие ресурсы.
@@ -32,8 +32,6 @@ public class DispatcherServlet extends HttpServlet {
 
     // с redirect
     resp.sendRedirect("/flights");
-
-
 
     // используем атрибуты req, т. е. что то доустановить - т. е. аттрибуты
     // req.setAttribute("1", "234");

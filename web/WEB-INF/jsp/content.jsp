@@ -22,6 +22,7 @@
     <p>Header: ${header["Cookie"]}</p>
     <p>Param id 2: ${param.id}</p>
     <p>Param test: ${param.test}</p>
+    <%-- тут показываем нашу коллекцию, что она не пуста - true либо false--%>
     <p>Empty list: ${not empty requestScope.flights}</p>
 
 </div>

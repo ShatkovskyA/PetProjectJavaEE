@@ -1,13 +1,14 @@
 package com.vashajava.http.servlet;
 
 import com.vashajava.http.service.FlightService;
+import com.vashajava.http.util.JspHelper;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * Класс FlightServlet - который будет работать с сущностями Flight
@@ -27,6 +28,14 @@ public class FlightServlet extends HttpServlet {
   // для представления
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    // тут показываем возможности jstl
+    req.setAttribute("flights", flightService.findAll());
+    // тут показываем возможности jstl - далее
+    req.getRequestDispatcher(JspHelper.getPath("flights"))
+        .forward(req, resp);
+
+    // тут, после создания flights.jsp - весь этот отрывок кода копируем и перебрасываем в flights.jsp
+    /*
     // заголовок
     resp.setContentType("text/html");
     // устанавливаем кодировку
@@ -47,5 +56,6 @@ public class FlightServlet extends HttpServlet {
       });
       printWriter.write("</ul>");
     }
+    */
   }
 }

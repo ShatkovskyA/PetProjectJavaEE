@@ -6,12 +6,12 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%-- добавляем логику показа кнопочки, если пользователь залогинен --%>
+<%-- добавляем логику показа кнопочки, если пользователь залогинен - это версия с javax
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> --%>
 
-<%-- <h1>Header. Заголовок </h1> --%>
+<h1>Header. Заголовок </h1>
 
 <%-- реализация logout --%>
 <div>
